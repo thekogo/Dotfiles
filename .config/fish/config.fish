@@ -1,3 +1,8 @@
+if status is-interactive
+and not set -q TMUX
+    exec tmux
+end
+
 set fish_greeting ""
 
 set -gx TERM xterm-256color
@@ -18,7 +23,7 @@ alias g git
 alias dps "docker ps"
 alias dc "docker-compose"
 alias gowork "cd ~/go/src/github.com/"
-
+alias vi "nvim"
 command -qv nvim && alias vim nvim
 
 set -gx EDITOR nvim
