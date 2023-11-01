@@ -10,7 +10,6 @@ export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/snap/bin
 export PATH=$PATH:/home/thekogo/go/bin
 export JAVA_HOME=/home/thekogo/bin/jdk-21
-export PATH=$PATH:$JAVA_HOME/bin
 export PATH=$PATH:/home/thekogo/.local/bin
 
 export TERM=xterm-256color
@@ -19,3 +18,5 @@ export PATH="/home/thekogo/.local/share/fnm:$PATH"
 eval "`fnm env`"
 
 eval "$(direnv hook zsh)"
+
+alias tmux="TERM=screen-256color-bce tmux"
