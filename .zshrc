@@ -9,7 +9,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/snap/bin
 export PATH=$PATH:/home/thekogo/go/bin
-export JAVA_HOME=/home/thekogo/bin/jdk-21
+export JAVA_HOME=/usr/lib/jvm/jdk-21-oracle-x64
 export PATH=$PATH:/home/thekogo/.local/bin
 
 export TERM=xterm-256color
