@@ -8,26 +8,26 @@ vim.opt.shiftwidth = 4 -- the number of spaces inserted for each indentation
 vim.opt.tabstop = 4    -- insert 4 spaces for a tab
 
 lvim.plugins = {
-    -- {
-    --   "briones-gabriel/darcula-solid.nvim",
-    --   dependencies = {
-    --     "rktjmp/lush.nvim"
-    --   }
-    -- },
-    { 'echasnovski/mini.splitjoin', version = false },
-    {
-        "zbirenbaum/copilot.lua",
-        cmd = "Copilot",
-        event = "InsertEnter",
-    },
-    {
-        "zbirenbaum/copilot-cmp",
-        after = { "copilot.lua" },
-        config = function()
-            require("copilot_cmp").setup()
-        end,
-    },
-    { 'simrat39/rust-tools.nvim' },
+  -- {
+  --   "briones-gabriel/darcula-solid.nvim",
+  --   dependencies = {
+  --     "rktjmp/lush.nvim"
+  --   }
+  -- },
+  { 'echasnovski/mini.splitjoin', version = false },
+  {
+    "zbirenbaum/copilot.lua",
+    cmd = "Copilot",
+    event = "InsertEnter",
+  },
+  {
+    "zbirenbaum/copilot-cmp",
+    after = { "copilot.lua" },
+    config = function()
+      require("copilot_cmp").setup()
+    end,
+  },
+  { 'simrat39/rust-tools.nvim' },
 }
 
 -- lvim.colorscheme = "darcula-solid"
